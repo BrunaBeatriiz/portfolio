@@ -22,7 +22,7 @@ O objetivo é demonstrar minhas habilidades práticas em desenvolvimento Front-E
 
 ## 🖥️ Acesse o Portfólio
 
-🔗 [Ver projeto online](https://SEU-LINK-AQUI)
+🔗[Ver Projeto](https://brunabeatriiz.github.io/portfolio/)
 
 ---
 
@@ -43,7 +43,7 @@ O objetivo é demonstrar minhas habilidades práticas em desenvolvimento Front-E
 Sistema de gerenciamento financeiro com dashboard, filtros e visualização de despesas.
 
 🔗 [Ver projeto](https://controle-de-gastos-cyan.vercel.app/)
-📁 [Repositório](https://github.com/SEU-REPO-AQUI)
+📁 [Repositório](https://github.com/BrunaBeatriiz/expense-tracker)
 
 ---
 
@@ -52,7 +52,7 @@ Sistema de gerenciamento financeiro com dashboard, filtros e visualização de d
 Aplicação em React com gerenciamento de estado para controle de tarefas.
 
 🔗 [Ver projeto](https://curso-react-fr-y6hn.vercel.app/)
-📁 [Repositório](https://github.com/SEU-REPO-AQUI)
+📁 [Repositório](https://github.com/BrunaBeatriiz/task-manager-react)
 
 ---
 
@@ -104,7 +104,7 @@ The goal is to demonstrate my practical skills in Front-End development.
 
 ## 🖥️ Live Demo
 
-🔗 [View project online](https://SEU-LINK-AQUI)
+🔗 [View project online](https://brunabeatriiz.github.io/portfolio/)
 
 ---
 
@@ -125,7 +125,7 @@ The goal is to demonstrate my practical skills in Front-End development.
 Financial management system with dashboard, filters, and expense visualization.
 
 🔗 [Live Demo](https://controle-de-gastos-cyan.vercel.app/)
-📁 [Repository](https://github.com/SEU-REPO-AQUI)
+📁 [Repository](https://github.com/BrunaBeatriiz/task-manager-react)
 
 ---
 
@@ -134,7 +134,7 @@ Financial management system with dashboard, filters, and expense visualization.
 React app with state management for task control.
 
 🔗 [Live Demo](https://curso-react-fr-y6hn.vercel.app/)
-📁 [Repository](https://github.com/SEU-REPO-AQUI)
+📁 [Repository](https://github.com/BrunaBeatriiz/task-manager-react)
 
 ---
 
