@@ -288,6 +288,12 @@ card */
     align-items: center;
     gap: 8px;
 }
+
+.skills span:hover {
+    transform: scale(1.08);
+    background: #00468b;
+    color: white;
+}
 /* CORES IGUAIS AO SEU ANTIGO */
 .skills-list li:nth-child(1) i {color: orangered;}
 .skills-list li:nth-child(2) i {color: blue;}
