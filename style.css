@@ -40,6 +40,9 @@ main{
       box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 
       backdrop-filter: blur(4px);
+    
+    
+
 }
 
 /* NAV */
@@ -48,7 +51,7 @@ nav{
     color: #011526;
     margin-top: 5px;
     width: 100%;
-    margin-left: -8px;
+    
     padding-left: 0px;
     display: flex;
     justify-content: flex-end;
@@ -57,7 +60,9 @@ nav{
     position: sticky;
     top: 0;
     z-index: 1;
+    pointer-events: auto;
 }
+
 
 
 
