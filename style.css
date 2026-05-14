@@ -77,6 +77,19 @@ nav a{
     align-items: center;
 }
 
+.butDark{
+    background-color: #002f5b00;
+     color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: background-color 0.5s;
+    display: flex;
+    border: none;
+
+    align-items: center;
+
+}
+
 nav a svg {
     width: 22px;
     height: 22px;
@@ -84,6 +97,13 @@ nav a svg {
 
 nav a:hover {
     opacity: 0.8;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.butDark:hover{
+     opacity: 0.8;
     background-color: rgba(255,255,255,0.2);
     border-radius: 5px;
     padding: 4px;
@@ -333,4 +353,56 @@ footer p {
 
 .contatos a:hover {
     transform: scale(1.2);
+}
+
+
+body.dark {
+    background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+    color: #f8fafc;
+}
+
+
+body.dark #principal {
+    background-color: rgba(15, 23, 42, 0.95);
+}
+
+body.dark .card {
+    background: #1e293b;
+    color: #f8fafc;
+}
+
+body.dark .description,
+body.dark .hero p,
+body.dark .card p {
+    color: #cbd5e1;
+}
+
+body.dark nav {
+    background: #021526;
+}
+
+body.dark footer {
+    background: #021526;
+}
+
+body.dark .btn {
+    background: #2563eb;
+}
+
+body.dark .btn.outline {
+    border-color: #60a5fa;
+    color: #60a5fa;
+    background: transparent;
+}
+
+body.dark h2 {
+    border-left-color: #60a5fa;
+}
+
+body.dark .subtitle {
+    color: #60a5fa;
+}
+
+body.dark .hr {
+    background-color: #334155;
 }
