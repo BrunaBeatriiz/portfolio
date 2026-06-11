@@ -19,44 +19,68 @@
 #011526*/
 
 body {
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #eef5ff, #cddfff, #e6efff);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+   background:
+        radial-gradient(circle at top left, #b8d8ff, transparent 35%),
+        radial-gradient(circle at bottom right, #a7c7ff, transparent 35%),
+        linear-gradient(135deg, #eef5ff, #cddfff);
+
+
+
+        
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
 }
 
-main{
+main {
     width: 90%;
     margin: auto;
 }
 
-#principal{
+#principal {
     width: 80%;
-    background-color: rgba(245, 245, 245, 0.904);
-    margin: 10px 0;
-    border-radius: 6px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    background-color: rgba(255, 255, 255, 0.767);
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
 
-      backdrop-filter: blur(4px);
-    
-    
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(12px);
+
+
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
 
 }
 
 /* NAV */
 
-nav{
+nav {
     color: #011526;
-    margin-top: 5px;
+    margin-top: 3px;
     width: 100%;
-    
-    padding-left: 0px;
+
+    padding: 12px 25px;
     display: flex;
-    justify-content: flex-end;
-    background: #00468b;
-    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+    background: rgba(0, 70, 139, 0.75);
+
+    backdrop-filter: blur(12px);
+
+
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.15);
+
+
     position: sticky;
     top: 0;
     z-index: 1;
@@ -64,29 +88,60 @@ nav{
 }
 
 
+.logo {
+
+    color: white;
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+
+    letter-spacing:.5px;
+
+}
 
 
 
-nav a{
-    margin: 0 20px;
+
+.logo span {
+
+    color: #60a5fa;
+
+    font-size: 1.5rem;
+
+}
+
+
+.nav-links {
+
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+
+}
+
+nav a {
+
     color: white;
     text-decoration: none;
-    margin-left: 20px;
-    transition: background-color 0.5s;
+    padding: 6px 12px;
+    transition: .3s;
+    border-radius: 20px;
     display: flex;
     align-items: center;
 }
 
-.butDark{
-    background-color: #002f5b00;
-     color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    transition: background-color 0.5s;
-    display: flex;
+.butDark {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-left: 5px;
     border: none;
 
-    align-items: center;
+    border-radius: 50%;
+
 
 }
 
@@ -96,30 +151,31 @@ nav a svg {
 }
 
 nav a:hover {
-    opacity: 0.8;
-    background-color: rgba(255,255,255,0.2);
+
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     padding: 4px;
 }
 
-.butDark:hover{
-     opacity: 0.8;
-    background-color: rgba(255,255,255,0.2);
-    border-radius: 5px;
+.butDark:hover {
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.2);
+
     padding: 4px;
 }
 
 /* HERO */
 
-.hero{
+.hero {
     text-align: center;
     padding: 20px;
 }
 
-.hero h1{
+.hero h1 {
     font-size: 2.6em;
     font-weight: bold;
 }
+
 .subtitle {
     font-weight: 600;
     color: #00468b;
@@ -131,18 +187,18 @@ nav a:hover {
     margin: 10px auto;
 }
 
-.hero p{
+.hero p {
     margin-top: 10px;
     font-size: 1.3em;
     color: #555;
 }
 
-.buttons{
+.buttons {
     margin-top: 20px;
 }
 
-.btn{
-    background: #00468b;
+.btn {
+    background: linear-gradient(135deg, #00468b, #2563eb);
     color: white;
     padding: 10px 20px;
     border-radius: 8px;
@@ -152,12 +208,12 @@ nav a:hover {
     transition: all 0.3s ease;
 }
 
-.btn:hover{
+.btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.btn.outline{
+.btn.outline {
     background: transparent;
     border: 2px solid #00468b;
     color: #00468b;
@@ -174,11 +230,11 @@ nav a:hover {
 
 /* section */
 
-section{
+section {
     margin: 40px 0;
 }
 
-h2{
+h2 {
     margin-bottom: 20px;
     border-left: 5px solid #00468b;
     padding-left: 8px;
@@ -187,7 +243,7 @@ h2{
 
 /* grid */
 
-.grid{
+.grid {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -196,29 +252,34 @@ h2{
 /* 
 card */
 
-.card{
-    background: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.08);
+.card {
+    background: rgba(255, 255, 255, 0.65);
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
     transition: all 0.3s ease;
-    
+
 }
 
-#flex-row{
-    
+#flex-row {
+
     display: flex;
-    
+
     gap: 10px;
 }
 
 
 
-.card:hover{
+.card:hover {
     transform: translateY(-3px) scale(1.01);
 }
 
-.card img{
+.card img {
     width: 100%;
     border-radius: 8px;
     transition: 0.3s;
@@ -228,11 +289,11 @@ card */
     transform: scale(1.03);
 }
 
-.card h3{
+.card h3 {
     margin-top: 10px;
 }
 
-.card p{
+.card p {
     margin-top: 10px;
     font-size: 0.9em;
 
@@ -242,32 +303,40 @@ card */
 
 /* botôes */
 
-.card-buttons{
+.card-buttons {
     margin-top: 15px;
     margin-bottom: 10px;
 }
 
-.card-buttons a{
-    background: #00468b;
-    color:white;
-    padding: 6px 10px;
+.card-buttons a {
+    background: linear-gradient(135deg,
+            #00468b,
+            #2563eb);
+
+    color: white;
+    padding: 8px 10px;
     border-radius: 6px;
     text-decoration: none;
-    margin-right:5px;
+    margin-right: 8px;
     font-size: 0.9em;
-    transition: 0.2s;
+    transition: 0.3s;
+    display: inline-block;
 }
+
 .card-buttons a:hover {
-    background: #002f5b;
+
+
+    box-shadow:0 4px 10px rgba(0, 70, 139, 0.35);
+
     transform: scale(1.05);
 }
 
 .destaque {
-    border: 2px solid #00468b;
-    margin: 2px;
+    border: 1px solid #00468b;
+
 }
 
-.hr{
+.hr {
     height: 2px;
     background-color: #8c7c68;
     margin: 20px 0;
@@ -296,18 +365,18 @@ card */
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* skills */
 
 
-.skills-list{
+.skills-list {
     list-style: none;
     padding: 10px;
 }
 
-.skills-list li{
+.skills-list li {
     margin: 8px 0;
     display: flex;
     align-items: center;
@@ -319,41 +388,134 @@ card */
     background: #00468b;
     color: white;
 }
+
 /* CORES IGUAIS AO SEU ANTIGO */
-.skills-list li:nth-child(1) i {color: orangered;}
-.skills-list li:nth-child(2) i {color: blue;}
-.skills-list li:nth-child(3) i {color: yellow;}
-.skills-list li:nth-child(4) i {color: rgb(11, 43, 185);}
+.skills-list li:nth-child(1) i {
+    color: orangered;
+}
+
+.skills-list li:nth-child(2) i {
+    color: blue;
+}
+
+.skills-list li:nth-child(3) i {
+    color: yellow;
+}
+
+.skills-list li:nth-child(4) i {
+    color: rgb(11, 43, 185);
+}
 
 /* extras */
-.skills-list:last-of-type li:nth-child(1) i {color: rgb(50, 36, 170);}
-.skills-list:last-of-type li:nth-child(2) i {color: orangered;}
-.skills-list:last-of-type li:nth-child(3) i {color: green;}
+.skills-list:last-of-type li:nth-child(1) i {
+    color: rgb(50, 36, 170);
+}
+
+.skills-list:last-of-type li:nth-child(2) i {
+    color: orangered;
+}
+
+.skills-list:last-of-type li:nth-child(3) i {
+    color: green;
+}
 
 
 
-footer{
-    color: white;
-    padding: 10px;
+footer {
+
+    margin-top: 40px;
+
+    padding: 20px 5px;
+
     width: 100%;
+
     text-align: center;
-    background:#00468b;
+
+    background:linear-gradient(135deg,
+            #00468b,
+            #002f5b);
+
+    color: white;
+
 }
 
-footer p {
-    margin-bottom: 5px;
+
+footer h3 {
+
+    font-size: 1.0rem;
+    opacity: 90%;
+
+    margin-bottom: 15px;
+
+    font-weight: 600;
+
 }
+
+
+.contatos {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-bottom: 10px;
+
+}
+
 
 .contatos a {
+
+    display: inline-flex;
+
+    width: 45px;
+    height: 45px;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, .15);
+
     color: white;
-    font-size: 1.5em;
-    margin: 10px;
-    transition: 0.3s;
+
+    font-size: 1.3rem;
+
+    text-decoration: none;
+
+    transition: .3s;
 }
 
+
+
 .contatos a:hover {
-    transform: scale(1.2);
+
+    transform: translateY(-5px);
+
+    background: white;
+
+    color: #00468b;
+
 }
+
+
+footer small {
+
+    opacity: .7;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 body.dark {
