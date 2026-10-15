@@ -22,14 +22,14 @@ body {
     min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-   background:
+    background:
         radial-gradient(circle at top left, #b8d8ff, transparent 35%),
         radial-gradient(circle at bottom right, #a7c7ff, transparent 35%),
         linear-gradient(135deg, #eef5ff, #cddfff);
 
 
 
-        
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +96,7 @@ nav {
 
     font-weight: 700;
 
-    letter-spacing:.5px;
+    letter-spacing: .5px;
 
 }
 
@@ -326,7 +326,7 @@ card */
 .card-buttons a:hover {
 
 
-    box-shadow:0 4px 10px rgba(0, 70, 139, 0.35);
+    box-shadow: 0 4px 10px rgba(0, 70, 139, 0.35);
 
     transform: scale(1.05);
 }
@@ -431,7 +431,7 @@ footer {
 
     text-align: center;
 
-    background:linear-gradient(135deg,
+    background: linear-gradient(135deg,
             #00468b,
             #002f5b);
 
@@ -509,6 +509,17 @@ footer small {
 
 
 
+
+
+
+
+@media (min-width: 900px) {
+
+    #principal {
+        width: 65%
+    }
+
+}
 
 
 
